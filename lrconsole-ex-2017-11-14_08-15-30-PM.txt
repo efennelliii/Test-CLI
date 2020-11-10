@@ -1,0 +1,10 @@
+System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when sending the request to the server. (provider: TCP Provider, error: 0 - An existing connection was forcibly closed by the remote host.) ---> System.ComponentModel.Win32Exception (0x80004005): An existing connection was forcibly closed by the remote host
+   at Infragistics.Win.UltraWinDock.UltraDockManager.FireEvent(DockManagerEventIds id, EventArgs e)
+   at Infragistics.Win.UltraWinDock.UltraDockManager.NotifyPossibleActivePaneChange()
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Windows.Forms.Form.OnActivated(EventArgs e)
+   at System.Windows.Forms.Form.set_Active(Boolean value)
+   at System.Windows.Forms.Form.WmActivate(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:4407e26e-d79f-4d22-b03a-80f6b65aaec4
+Error Number:10054,State:0,Class:20

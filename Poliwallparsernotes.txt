@@ -1,0 +1,32 @@
+172.16.232.17 domain_log: 2018-02-23T15:33:37.370606-0500 action=allowed, direction=inbound, proto=UDP, reason='not found', src=170.139.252.252, dst=204.117.214.10, src_port=28508, dst_port=53, domain='support.bandurasystems.com'
+
+172.16.232.17 domain_log: 2018-02-12T16:08:00.329221-0500 action=allowed, direction=inbound, proto=UDP, reason='not found', src=170.139.252.252, dst=204.117.214.10, src_port=4363, dst_port=53, domain='C26496'
+
+172.16.232.17 domain_log: 2018-02-12T16:03:33.289661-0500 action=allowed, direction=inbound, proto=UDP, reason='not found', src=170.139.252.252, dst=8.8.8.8, src_port=36427, dst_port=53, domain='.
+
+172.16.232.17 domain_log: 2018-02-12T16:01:23.892884-0500 action=allowed, direction=inbound, proto=UDP, reason='not found', src=170.139.252.252, dst=8.8.8.8, src_port=2049, dst_port=53, domain='a1294.w20.akamai.net'
+ 
+172.16.232.17 domain_log: 2018-02-12T15:57:17.276986-0500 action=allowed, direction=inbound, proto=UDP, reason='not found', src=170.139.252.252, dst=8.8.8.8, src_port=2049, dst_port=53, domain='download.websense.com'
+
+172.16.232.17 domain_log: 2018-02-12T15:53:41.974064-0500 action=allowed, direction=inbound, proto=UDP, reason='not found', src=170.139.252.252, dst=8.8.8.8, src_port=25094, dst_port=53, domain='poliwall-proact.firsthealth.org'
+
+
+
+(?=.*?10610(0|3))^.*?%((PIX|ASA|FWSM)-\d-(?<vmid>10610(0|3))): access-list.*?(?<tag1>permitted|denied|est-allowed)\s(<protname>|(?<protnum>\d+))( for user '(?<login>.*?)')?.*?/(<sip>|(?<sname>[^\.]+))(\s.*?)?\((?<sport>\d+)\)\s->.*?/(<dip>|(?<dname>[^\.]+))(\s.*?)?\((?<dport>\d+)\)(.*?hit-cnt (?<amount>\d+)\s)?(.*?\((?<seconds>.*?)-second interval)?(.*?\[(?<object>.*?),\s+(?<objectname>.*?)\])?
+
+
+
+TXh9utU\gl=R
+
+
+marquita willis stanfield
+
+
+
+packet_log 
+
+.*?packet_log:\s.*?action=(?<tag1>allowed|dropped),\sdirection=(?<tag2>inbound|outbound),\sgroup_uid=(.*?),\sgroup=(.*?),\sproto=<protname>,\scountry=(.*?),\sas_num=(\d+?),\sas_name=(.*?),\sreason=<reason>,\ssrc=<sip>,\sdst=<dip>,\ssrc_port=<sport>,\sdst_port=<dport>.*?
+
+packet_log (condensed)
+
+.*?packet_log:\s.*?action=(?<tag1>allowed|dropped),\sdirection=(?<tag2>inbound|outbound).*?proto=<protname>.*?reason=<reason>,\ssrc=<sip>,\sdst=<dip>,\ssrc_port=<sport>,\sdst_port=<dport>.*?
